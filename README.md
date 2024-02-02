@@ -26,7 +26,7 @@ L'application d'Analyse de Commentaires avec FastAPI permet d'effectuer les tâc
 
 ## Prérequis
 
-- Python 3.x
+- Python 3.11
 - FastAPI
 - Detoxify
 - MongoDB
