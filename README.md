@@ -1,6 +1,4 @@
-## Analyse de Commentaires avec FastAPI
-
-# Analyse de Commentaires avec FastAPI
+# Analyse-des-toxicites-des-commentaires-avec-detoxify-fastAPI-
 
 ## Aperçu
 
@@ -39,39 +37,55 @@ L'application d'Analyse de Commentaires avec FastAPI permet d'effectuer les tâc
 ### 1. Cloner le dépôt :
 
 ```bash
-git clone https://github.com/votre_nom/fastapi-comment-analysis.git
-cd fastapi-comment-analysis
+git clone https://github.com/MedHisoka11/Analyse-des-toxicites-des-commentaires-avec-detoxify-fastAPI-.git
+cd fastapi
 
 
 2. Installer les dépendances :
-bash
+
+
 Copy code
 pip install -r requirements.txt
+
+
 3. Configurer MongoDB :
 Assurez-vous que MongoDB est installé et en cours d'exécution. Mettez à jour les détails de connexion MongoDB dans l'application FastAPI ou utilisez des variables d'environnement.
 
 Utilisation
 
 Exécuter l'application FastAPI :
-bash
+
 Copy code
 uvicorn main:app --reload
+
 Accéder à la documentation FastAPI :
+
 Ouvrez votre navigateur et accédez à http://127.0.0.1:8000/docs pour interagir avec l'API en utilisant Swagger.
+
 Nettoyer les Commentaires :
+
 Utilisez le point de terminaison API fourni pour nettoyer les commentaires.
+
 Analyse de Toxicité :
+
 Utilisez le modèle Detoxify pour l'analyse de toxicité via la route API dédiée.
+
 Chargement des Données dans MongoDB :
+
 Les commentaires nettoyés et analysés sont automatiquement chargés dans la base de données MongoDB.
+
 Conteneurisation avec Docker
 
 Construire l'image Docker :
-bash
+
 Copy code
+
 docker build -t fastapi-comment-analysis .
+
 Exécuter le conteneur Docker :
-bash
+
 Copy code
+
 docker run -p 8000:8000 fastapi-comment-analysis
+
 L'application FastAPI sera accessible à l'adresse http://127.0.0.1:8000.
